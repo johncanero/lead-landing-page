@@ -4,9 +4,6 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import Button from "../components/Button";
-// Icons
-import { AiOutlineShoppingCart } from "@react-icons/all-files/ai/AiOutlineShoppingCart";
-import { CgProfile } from "@react-icons/all-files/cg/CgProfile";
 
 const Header = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -36,7 +33,7 @@ const Header = () => {
       );
     } else {
       return (
-        <Button className="text-green-400" onClick={() => setTheme("light")}>
+        <Button className="" onClick={() => setTheme("light")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-5 h-5"
@@ -57,92 +54,25 @@ const Header = () => {
   return (
     <div>
       <div className="hidden pt-3 mx-2 lg:block">
-        <header className="flex items-center justify-between h-16 mt-1 md:mt-3 font-ShareTechMono">
-          {/* Justify Between: Left */}
-          <div className="flex">
-            {/* Heading Title Link */}
-            <div className="flex">
-              <Link rel="noopener noreferrer" href="/">
-                <Image
-                  src="/images/techStore.png"
-                  width={50}
-                  height={45}
-                  alt="aLogo"
-                  className=""
-                />
-              </Link>
-              <Link rel="noopener noreferrer" href="/">
-                {/* Heading Title: Tech Jam */}
-                <h1 className="mt-1 ml-6 text-4xl font-black dark:text-green-400 font-Roboto">
-                  Tech Jam
-                </h1>
-              </Link>
-            </div>
+        <header className="flex items-center justify-between h-16 mt-1 md:mt-3">
 
-            <ul className="flex gap-12 mt-2 text-sm ml-14 lg:text-lg">
-              {/* Header Links */}
-              <Link
-                rel="noopener noreferrer"
-                href="/"
-                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
-              >
-                Home
-              </Link>
-
-              <Link
-                rel="noopener noreferrer"
-                href="/categories"
-                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
-              >
-                Categories
-              </Link>
-
-              <Link
-                rel="noopener noreferrer"
-                href="/howtobuy"
-                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
-              >
-                How To Buy
-              </Link>
-
-              <Link
-                rel="noopener noreferrer"
-                href="/about"
-                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
-              >
-                About
-              </Link>
-
-              <Link
-                rel="noopener noreferrer"
-                href="/contact"
-                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
-              >
-                Contact
-              </Link>
-
-              {/* <Link
-                rel="noopener noreferrer"
-                href="/"
-                className="mt-1 text-lg font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-30"
-              >
-                Warranty
-              </Link> */}
-            </ul>
+          {/* Heading Title */}
+          <div>
+            <Link rel="noopener noreferrer" href="/">
+              <h1 className="mt-1 text-4xl font-extrabold dark:text-purple-500 font-Montserrat">
+                lead
+              </h1>
+            </Link>
           </div>
 
-          <div className="flex">
-            <button>
-              <AiOutlineShoppingCart size={34} className="mr-6" />
-            </button>
 
-            <button>
-              <CgProfile size={34} className="mr-6" />
+          <div className="flex">
+            <button className="px-4 py-2 mr-4 font-semibold bg-transparent border-2 border-black rounded hover:bg-purple-500 hover:text-white hover:border-transparent font-Montserrat">
+              Request Beta Access
             </button>
             {renderThemeChanger()}
           </div>
         </header>
-        <hr className="h-px mt-8 border-0 bg-neutral-200 dark:bg-neutral-700"></hr>
       </div>
     </div>
   );

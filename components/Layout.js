@@ -10,22 +10,22 @@ const Layout = ({ children }) => {
     <>
       {/* Head */}
       <Head>
-        <title>Tech Jam</title>
+        <title>Lead</title>
         <meta
           name="description"
-          content="Tech Jam (Technology, Products and Marketplace)"
+          content="Lead: A super solution for your business"
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           property="og:title"
-          content="Tech Jam (Technology, Products and Marketplace)"
+          content="Lead Generator Tool"
         />
         <meta
           property="og:description"
-          content="Technology, Marketplace, Products, Innovation, Advices, Tips"
+          content="Market and Sales Automation"
         />
-        {/* Flaticon */}
-        <link rel="shortcut icon" href="/images/techStore.png" />
+
+        <link rel="shortcut icon" href="images/leadIcon.png" />
       </Head>
 
       {/* Header, Main & Footer */}
