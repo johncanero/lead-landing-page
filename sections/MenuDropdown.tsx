@@ -12,9 +12,7 @@ import { AiOutlineOrderedList } from "@react-icons/all-files/ai/AiOutlineOrdered
 import { AiOutlineQuestionCircle } from "@react-icons/all-files/ai/AiOutlineQuestionCircle";
 import { RiFileHistoryLine } from "@react-icons/all-files/ri/RiFileHistoryLine";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
-// Header Main Icons
-import { AiOutlineShoppingCart } from "@react-icons/all-files/ai/AiOutlineShoppingCart";
-import { CgProfile } from "@react-icons/all-files/cg/CgProfile";
+
 
 const MenuDropdown = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -32,7 +30,7 @@ const MenuDropdown = () => {
     if (currentTheme === "dark") {
       return (
         <Button
-          className="flex gap-1 text-neutral-900"
+          className="flex gap-1"
           onClick={() => setTheme("light")}
         >
           <svg
@@ -47,13 +45,13 @@ const MenuDropdown = () => {
               clipRule="evenodd"
             />
           </svg>
-          <span className="">Light/Dark Mode</span>
+
         </Button>
       );
     } else {
       return (
         <Button
-          className="flex gap-1 text-neutral-900"
+          className="flex gap-1"
           onClick={() => setTheme("dark")}
         >
           <svg
@@ -64,7 +62,7 @@ const MenuDropdown = () => {
           >
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
           </svg>
-          <span className="">Light/Dark Mode</span>
+
         </Button>
       );
     }
@@ -72,190 +70,23 @@ const MenuDropdown = () => {
 
   return (
     // Mobile Visibility
-    <div className="px-2">
-      <div className="flex justify-between mt-4 text-right md:mt-6 lg:hidden top-16 w-96 md:w-full md:mx-2 font-ShareTechMono">
+    <div className="">
+      <div className="flex justify-between mx-2 mt-4 text-right md:mt-6 lg:hidden top-16 md:w-full md:mx-2">
         <div>
           {/* Image */}
           <Link rel="noopener noreferrer" href="/">
             <div className="flex">
-              <Image
-                src="/images/techStore.png"
-                width={35}
-                height={40}
-                alt="jLogo"
-                className=""
-              />
-              {/* Heading Title: Tech Jam */}
-              <h1 className="ml-4 text-3xl font-bold dark:text-green-400 font-Roboto">
-                Tech Jam
+              <h1 className="mt-1 text-4xl font-extrabold dark:text-orange-500 font-Montserrat">
+                lead
               </h1>
             </div>
           </Link>
         </div>
 
-        {/* Dark Mode and Toggle */}
-        <div className="z-10 flex">
-          {/* Tablet Icons */}
-          <AiOutlineShoppingCart size={28} className="mt-1 mr-4 md:mr-6" />
-          <CgProfile size={28} className="mt-1 mr-4 md:block" />
-
-          <Menu as="div" className="relative inline-block mr-5 text-left">
-            {/* Toggle Button */}
-            <div>
-              <Menu.Button className="inline-flex justify-center w-full py-2 text-sm font-medium rounded-md text-neutral-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
-                <GiHamburgerMenu
-                  className="w-6 h-6 dark:text-white"
-                  aria-hidden="true"
-                />
-              </Menu.Button>
-            </div>
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-100"
-              enterFrom="transform opacity-0 scale-95"
-              enterTo="transform opacity-100 scale-100"
-              leave="transition ease-in duration-75"
-              leaveFrom="transform opacity-100 scale-100"
-              leaveTo="transform opacity-0 scale-95"
-            >
-              <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                {/* Home */}
-                <div className="px-1 py-1 ">
-                  <Menu.Item>
-                    {({ active }) => (
-                      <Link href="/">
-                        <button
-                          className={`${
-                            active
-                              ? "bg-violet-500 text-white"
-                              : "text-gray-900"
-                          } group flex w-full items-center rounded-md px-2 py-2 text-sm font-Poppins`}
-                        >
-                          <FaHome size={17} />
-                          <span className="ml-2">Home</span>
-                        </button>
-                      </Link>
-                    )}
-                  </Menu.Item>
-                  {/* Categories */}
-                  <Menu.Item>
-                    {({ active }) => (
-                      <Link href="/categories">
-                        <button
-                          className={`${
-                            active
-                              ? "bg-violet-500 text-white"
-                              : "text-gray-900"
-                          } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
-                        >
-                          <AiOutlineOrderedList size={17} />
-                          <span className="ml-2">Categories</span>
-                        </button>
-                      </Link>
-                    )}
-                  </Menu.Item>
-                </div>
-                {/* Create a New Section */}
-                {/* How To Buy */}
-                <div className="px-1 py-1 pb-2">
-                  <Menu.Item>
-                    {({ active }) => (
-                      <Link href="/howtobuy">
-                        <button
-                          className={`${
-                            active
-                              ? "bg-violet-500 text-white"
-                              : "text-gray-900"
-                          } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
-                        >
-                          <AiOutlineQuestionCircle size={17} />
-                          <span className="ml-2">How To Buy</span>
-                        </button>
-                      </Link>
-                    )}
-                  </Menu.Item>
-                  {/* About */}
-                  <Menu.Item>
-                    {({ active }) => (
-                      <Link href="/about">
-                        <button
-                          className={`${
-                            active
-                              ? "bg-violet-500 text-white"
-                              : "text-gray-900"
-                          } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
-                        >
-                          <RiFileHistoryLine size={17} />
-                          <span className="ml-2">About</span>
-                        </button>
-                      </Link>
-                    )}
-                  </Menu.Item>
-                </div>
-
-                {/* Contact */}
-                <div className="px-1 py-1 pb-2">
-                  <Menu.Item>
-                    {({ active }) => (
-                      <Link
-                        // target="_blank"
-                        rel="noopener noreferrer"
-                        href="/contact"
-                      >
-                        <button
-                          className={`${
-                            active
-                              ? "bg-violet-500 text-white"
-                              : "text-gray-900"
-                          } group flex w-72 items-center rounded-md px-2 py-1 text-sm font-Poppins`}
-                        >
-                          <AiOutlineMail size={17} />
-                          <span className="ml-2">Contact</span>
-                        </button>
-                      </Link>
-                    )}
-                  </Menu.Item>
-                </div>
-
-                {/* Contact */}
-                <div className="px-1 py-1 pb-2">
-                  <Menu.Item>
-                    {({ active }) => (
-                      <button
-                        className={`${
-                          active ? "bg-violet-500 text-white" : "text-gray-900"
-                        } group flex w-72 items-center rounded-md  py-1 text-sm font-Poppins`}
-                      >
-                        {renderThemeChanger()}
-                      </button>
-                    )}
-                  </Menu.Item>
-                </div>
-
-                {/* Bio Link */}
-                {/* <div className="px-1 py-1 pb-2">
-                <Menu.Item>
-                  {({ active }) => (
-                    <Link
-                      // target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://bio.link/johncanero"
-                    >
-                      <button
-                        className={`${
-                          active ? "bg-violet-500 text-white" : "text-gray-900"
-                        } group flex w-72 items-center rounded-md px-2 py-1 text-sm font-Poppins`}
-                      >
-                        <span className="ml-2">@johncanero</span>
-                      </button>
-                    </Link>
-                  )}
-                </Menu.Item>
-              </div> */}
-              </Menu.Items>
-            </Transition>
-          </Menu>
+        <div>
+          {renderThemeChanger()}
         </div>
+
       </div>
     </div>
   );
