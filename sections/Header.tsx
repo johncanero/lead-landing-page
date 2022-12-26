@@ -53,13 +53,13 @@ const Header = () => {
 
   return (
     <div>
-      <div className="hidden pt-3 mx-2 lg:block">
+      <div className="hidden pt-3 lg:block">
         <header className="flex items-center justify-between h-16 mt-1 md:mt-3">
 
           {/* Heading Title */}
           <div>
             <Link rel="noopener noreferrer" href="/">
-              <h1 className="mt-1 text-4xl font-extrabold dark:text-purple-500 font-Montserrat">
+              <h1 className="mt-1 text-4xl font-extrabold dark:text-orange-500 font-Montserrat">
                 lead
               </h1>
             </Link>
@@ -67,7 +67,7 @@ const Header = () => {
 
 
           <div className="flex">
-            <button className="px-4 py-2 mr-4 font-semibold bg-transparent border-2 border-black rounded hover:bg-purple-500 hover:text-white hover:border-transparent font-Montserrat">
+            <button className="px-4 py-2 mr-4 font-semibold bg-transparent border border-black rounded dark:border-white hover:bg-orange-500 hover:text-white hover:border-transparent font-Montserrat">
               Request Beta Access
             </button>
             {renderThemeChanger()}
