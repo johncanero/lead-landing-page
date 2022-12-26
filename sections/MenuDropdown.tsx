@@ -2,17 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "../components/Button";
-import { Menu, Transition } from "@headlessui/react";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-// Icons
-import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
-import { FaHome } from "@react-icons/all-files/fa/FaHome";
-import { AiOutlineOrderedList } from "@react-icons/all-files/ai/AiOutlineOrderedList";
-import { AiOutlineQuestionCircle } from "@react-icons/all-files/ai/AiOutlineQuestionCircle";
-import { RiFileHistoryLine } from "@react-icons/all-files/ri/RiFileHistoryLine";
-import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
-
 
 const MenuDropdown = () => {
   const { systemTheme, theme, setTheme } = useTheme();
