@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <div>
-      <div className='flex mt-10'>
+      <div className='mt-10 mb-20 md:flex md:flex-wrap'>
 
         {/* Column 1 */}
         <div className='flex'>
@@ -38,7 +38,7 @@ const Hero = () => {
               </button>
             </div>
 
-            <div className='ml-96'>
+            <div className='md:ml-56 lg:ml-96'>
               <Image
                 src="/images/hero/orangeLeadPortrait2.jpg"
                 width={380}
@@ -51,21 +51,21 @@ const Hero = () => {
         </div>
 
         {/* Column 2 */}
-        <div className='flex-col mt-20 ml-28 font-Montserrat'>
+        <div className='md:mt-24 lg:mt-32 md:gap-20 md:text-center md:flex lg:flex-col ml-28 font-Poppins'>
 
           <div>
-            <h2 className='mt-16 text-5xl font-bold'>2K+</h2>
-            <h4 className='font-medium  text-neutral-500'>COMPANIES</h4>
+            <h2 className='text-5xl font-bold '>2K+</h2>
+            <h4 className='mt-1 font-medium text-neutral-500'>COMPANIES</h4>
           </div>
 
           <div>
-            <h2 className='mt-16 text-5xl font-bold'>8</h2>
-            <h4 className='font-medium  text-neutral-500'>LANGUAGES</h4>
+            <h2 className='text-5xl font-bold '>8</h2>
+            <h4 className='mt-1 font-medium text-neutral-500'>LANGUAGES</h4>
           </div>
 
           <div>
-            <h2 className='mt-16 text-5xl font-bold'>1.2M</h2>
-            <h4 className='font-medium  text-neutral-500'>LEADS</h4>
+            <h2 className='text-5xl font-bold '>1.2M</h2>
+            <h4 className='mt-1 font-medium text-neutral-500'>LEADS</h4>
           </div>
         </div>
       </div>
