@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <div>
-      <div className='flex mt-12'>
+      <div className='flex mt-10'>
 
         {/* Column 1 */}
         <div className='flex'>
@@ -39,26 +39,34 @@ const Hero = () => {
             </div>
 
             <div className='ml-96'>
-
-
               <Image
                 src="/images/hero/orangeLeadPortrait2.jpg"
-                width={370}
+                width={380}
                 height={370}
                 alt="orangeLead Portrait"
                 className="ml-20 rounded-xl"
               />
             </div>
           </div>
-
-
-
-
         </div>
 
         {/* Column 2 */}
-        <div>
+        <div className='flex-col mt-20 ml-28 font-Montserrat'>
 
+          <div>
+            <h2 className='mt-16 text-5xl font-bold'>2K+</h2>
+            <h4 className='font-medium  text-neutral-500'>COMPANIES</h4>
+          </div>
+
+          <div>
+            <h2 className='mt-16 text-5xl font-bold'>8</h2>
+            <h4 className='font-medium  text-neutral-500'>LANGUAGES</h4>
+          </div>
+
+          <div>
+            <h2 className='mt-16 text-5xl font-bold'>1.2M</h2>
+            <h4 className='font-medium  text-neutral-500'>LEADS</h4>
+          </div>
         </div>
       </div>
     </div>
