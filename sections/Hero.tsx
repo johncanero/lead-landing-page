@@ -34,7 +34,7 @@ const Hero = () => {
 
               <p className='font-medium tracking-wider w-96 md:max-w-sm mt-7 md:mt-14 font-Montserrat text-neutral-700 dark:text-neutral-500'>Our marketing team and sales automations <br></br>help you scale your outreach to get <br></br> more leads for your company.</p>
 
-              <button className="px-6 py-3 mr-4 font-semibold text-white bg-transparent bg-orange-500 rounded mt-9 md:mt-16 hover:text-black font-Montserrat">
+              <button className="px-6 py-3 mt-8 mr-4 font-semibold text-white bg-transparent bg-orange-500 rounded md:mt-16 hover:text-black font-Montserrat">
                 Request Beta Access
               </button>
             </div>
@@ -46,7 +46,7 @@ const Hero = () => {
                 width={380}
                 height={370}
                 alt="orangeLead Landscape"
-                className="block mt-12 md:hidden rounded-xl"
+                className="block mt-9 md:hidden rounded-xl"
               />
               {/* Tablet and Desktop */}
               <Image
