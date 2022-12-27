@@ -64,19 +64,19 @@ const Hero = () => {
 
         {/* Column 2 */}
 
-        <div className='relative justify-center text-center lg:text-left mt-14 lg:mt-0 md:gap-40 md:flex lg:flex-col lg:ml-56 font-Poppins'>
+        <div className='relative justify-center mt-16 text-center lg:text-left lg:mt-0 md:gap-40 md:flex lg:flex-col lg:ml-56 font-Poppins'>
 
-          <div className='mt-9 md:mt-0'>
+          <div className='mt-14 md:mt-0'>
             <h2 className='text-5xl font-bold '>2K+</h2>
             <h4 className='mt-1 font-medium text-neutral-500'>COMPANIES</h4>
           </div>
 
-          <div className='mt-9 md:mt-0'>
+          <div className='mt-14 md:mt-0'>
             <h2 className='text-5xl font-bold '>8</h2>
             <h4 className='mt-1 font-medium text-neutral-500'>LANGUAGES</h4>
           </div>
 
-          <div className='mt-9 md:mt-0'>
+          <div className='mt-14 md:mt-0'>
             <h2 className='text-5xl font-bold '>1.2M</h2>
             <h4 className='mt-1 font-medium text-neutral-500'>LEADS</h4>
           </div>
