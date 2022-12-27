@@ -64,7 +64,7 @@ const Hero = () => {
 
         {/* Column 2 */}
 
-        <div className='relative justify-center md:text-center lg:text-left mt-14 lg:mt-0 md:gap-20 md:flex lg:flex-col lg:ml-56 font-Poppins'>
+        <div className='relative justify-center text-center lg:text-left mt-14 lg:mt-0 md:gap-20 md:flex lg:flex-col lg:ml-56 font-Poppins'>
 
           <div className='mt-9 md:mt-0'>
             <h2 className='text-5xl font-bold '>2K+</h2>
