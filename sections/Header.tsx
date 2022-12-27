@@ -58,20 +58,66 @@ const Header = () => {
 
           {/* Heading Title */}
           <div className="flex">
-            <Link rel="noopener noreferrer" href="/">
-              <Image
-                src="/images/leadIcon2.png"
-                width={45}
-                height={45}
-                alt="aLogo"
-                className=""
-              />
-            </Link>
-            <Link rel="noopener noreferrer" href="/">
-              <h1 className="mt-1 ml-3 text-4xl font-extrabold dark:text-orange-500 font-Montserrat">
-                lead
-              </h1>
-            </Link>
+            <div className="flex">
+              <Link rel="noopener noreferrer" href="/">
+                <Image
+                  src="/images/leadIcon2.png"
+                  width={45}
+                  height={45}
+                  alt="aLogo"
+                  className=""
+                />
+              </Link>
+              <Link rel="noopener noreferrer" href="/">
+                <h1 className="mt-1 ml-3 text-4xl font-extrabold dark:text-orange-500 font-Montserrat">
+                  lead
+                </h1>
+              </Link>
+            </div>
+
+
+            {/* Header Links */}
+            <ul className="flex gap-12 mt-2 text-sm ml-14 lg:text-base font-Montserrat">
+              <Link
+                rel="noopener noreferrer"
+                href="/"
+                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
+              >
+                Home
+              </Link>
+
+              <Link
+                rel="noopener noreferrer"
+                href="/categories"
+                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
+              >
+                Digital Marketing Services
+              </Link>
+
+              <Link
+                rel="noopener noreferrer"
+                href="/howtobuy"
+                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
+              >
+                Why Lead
+              </Link>
+
+              <Link
+                rel="noopener noreferrer"
+                href="/about"
+                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
+              >
+                Get A Quote
+              </Link>
+
+              <Link
+                rel="noopener noreferrer"
+                href="/contact"
+                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
+              >
+                Contact
+              </Link>
+            </ul>
           </div>
 
 
