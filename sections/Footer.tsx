@@ -7,7 +7,7 @@ import { GrInstagram } from "@react-icons/all-files/gr/GrInstagram"
 
 const Footer = () => {
   return (
-    <footer className="px-4 py-10 md:py-16 md:justify-between md:flex font-Montserrat">
+    <footer className="py-10 md:py-16 md:justify-between md:flex font-Montserrat">
 
       {/* Title */}
       <div>
@@ -20,7 +20,7 @@ const Footer = () => {
 
 
       {/* Copyright */}
-      <div className="mt-4 md:mt-1">
+      <div className="mt-4 text-center md:mt-1">
         <Link
           target="_blank"
           rel="noopener noreferrer"
