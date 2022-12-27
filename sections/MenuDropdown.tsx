@@ -132,7 +132,7 @@ const MenuDropdown = () => {
                   {/* Categories */}
                   <Menu.Item>
                     {({ active }) => (
-                      <Link href="/categories">
+                      <Link href="/digital-marketing-services">
                         <button
                           className={`${active
                             ? "bg-violet-500 text-white"
@@ -140,7 +140,7 @@ const MenuDropdown = () => {
                             } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
                         >
                           <AiOutlineOrderedList size={17} />
-                          <span className="ml-2">Categories</span>
+                          <span className="ml-2">Digital Marketing Services</span>
                         </button>
                       </Link>
                     )}
@@ -151,7 +151,7 @@ const MenuDropdown = () => {
                 <div className="px-1 py-1 pb-2">
                   <Menu.Item>
                     {({ active }) => (
-                      <Link href="/howtobuy">
+                      <Link href="/why-lead">
                         <button
                           className={`${active
                             ? "bg-violet-500 text-white"
@@ -159,7 +159,7 @@ const MenuDropdown = () => {
                             } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
                         >
                           <AiOutlineQuestionCircle size={17} />
-                          <span className="ml-2">How To Buy</span>
+                          <span className="ml-2">Why Lead</span>
                         </button>
                       </Link>
                     )}
@@ -167,7 +167,7 @@ const MenuDropdown = () => {
                   {/* About */}
                   <Menu.Item>
                     {({ active }) => (
-                      <Link href="/about">
+                      <Link  href="/get-a-quote">
                         <button
                           className={`${active
                             ? "bg-violet-500 text-white"
@@ -175,7 +175,7 @@ const MenuDropdown = () => {
                             } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
                         >
                           <RiFileHistoryLine size={17} />
-                          <span className="ml-2">About</span>
+                          <span className="ml-2">Get A Quote</span>
                         </button>
                       </Link>
                     )}
