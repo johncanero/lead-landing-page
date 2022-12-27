@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div>
       {/* Section 1 */}
-      <div className='flex-col mt-10 mb-20 md:flex md:flex-wrap lg:flex-row'>
+      <div className='flex-col mt-10 md:flex md:flex-wrap lg:flex-row'>
 
         {/* Column 1 */}
         <div className='md:flex'>
@@ -64,7 +64,7 @@ const Hero = () => {
 
         {/* Column 2 */}
 
-        <div className='relative justify-center text-center lg:text-left mt-14 lg:mt-0 md:gap-20 md:flex lg:flex-col lg:ml-56 font-Poppins'>
+        <div className='relative justify-center text-center lg:text-left mt-14 lg:mt-0 md:gap-40 md:flex lg:flex-col lg:ml-56 font-Poppins'>
 
           <div className='mt-9 md:mt-0'>
             <h2 className='text-5xl font-bold '>2K+</h2>

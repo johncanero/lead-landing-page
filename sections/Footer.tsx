@@ -7,7 +7,7 @@ import { GrInstagram } from "@react-icons/all-files/gr/GrInstagram"
 
 const Footer = () => {
   return (
-    <footer className="px-4 py-6 md:justify-between md:flex font-Montserrat">
+    <footer className="px-4 py-10 md:py-20 md:justify-between md:flex font-Montserrat">
 
       {/* Title */}
       <div>
@@ -34,8 +34,8 @@ const Footer = () => {
       </div>
 
       {/* Icons */}
-      <div className="mt-4 md:mt-1">
-        <div className="flex gap-8">
+      <div className="mt-6 md:mt-1">
+        <div className="flex justify-center gap-8">
           <GrFacebook size={24} />
           <GrTwitter size={24} />
           <GrInstagram size={24}/>
