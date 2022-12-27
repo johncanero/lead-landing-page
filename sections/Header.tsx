@@ -75,37 +75,40 @@ const Header = () => {
               </Link>
             </div>
 
+          </div>
 
-            {/* Header Links */}
+          {/* Header Links */}
+          <div>
+
             <ul className="flex gap-12 mt-2 text-sm ml-14 lg:text-base font-Montserrat">
               <Link
                 rel="noopener noreferrer"
                 href="/"
-                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
+                className="font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
               >
                 Home
               </Link>
 
               <Link
                 rel="noopener noreferrer"
-                href="/categories"
-                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
+                href="/digital-marketing-services"
+                className="font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
               >
                 Digital Marketing Services
               </Link>
 
               <Link
                 rel="noopener noreferrer"
-                href="/howtobuy"
-                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
+                href="/why-lead"
+                className="font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
               >
                 Why Lead
               </Link>
 
               <Link
                 rel="noopener noreferrer"
-                href="/about"
-                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
+                href="/get-a-quote"
+                className="font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
               >
                 Get A Quote
               </Link>
@@ -113,7 +116,7 @@ const Header = () => {
               <Link
                 rel="noopener noreferrer"
                 href="/contact"
-                className="mt-1 font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
+                className="font-semibold text-gray-600 border-b-2 border-transparent dark:text-gray-300 hover:border-gray-600 dark:hover:border-gray-300"
               >
                 Contact
               </Link>

@@ -7,7 +7,7 @@ import { GrInstagram } from "@react-icons/all-files/gr/GrInstagram"
 
 const Footer = () => {
   return (
-    <footer className="px-4 py-10 md:py-20 md:justify-between md:flex font-Montserrat">
+    <footer className="px-4 py-10 md:py-16 md:justify-between md:flex font-Montserrat">
 
       {/* Title */}
       <div>
