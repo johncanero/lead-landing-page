@@ -3,7 +3,7 @@ import Head from "next/head";
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 // Mobile
-import MenuDropdown from "../sections/MenuDropdown";
+import MenuDropdown from "../sections/MobileDropdown";
 
 const Layout = ({ children }) => {
   return (
