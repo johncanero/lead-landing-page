@@ -2,8 +2,16 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "../components/Button";
-import { useEffect, useState } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
+// Icons
+import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
+import { FaHome } from "@react-icons/all-files/fa/FaHome";
+import { AiOutlineOrderedList } from "@react-icons/all-files/ai/AiOutlineOrderedList";
+import { AiOutlineQuestionCircle } from "@react-icons/all-files/ai/AiOutlineQuestionCircle";
+import { RiFileHistoryLine } from "@react-icons/all-files/ri/RiFileHistoryLine";
+import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 
 const MenuDropdown = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -32,7 +40,7 @@ const MenuDropdown = () => {
           >
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
           </svg>
-
+          <span className="">Light/Dark Mode</span>
         </Button>
       );
     } else {
@@ -53,7 +61,7 @@ const MenuDropdown = () => {
               clipRule="evenodd"
             />
           </svg>
-
+          <span className="">Light/Dark Mode</span>
         </Button>
       );
     }
@@ -81,10 +89,160 @@ const MenuDropdown = () => {
           </div>
         </Link>
 
-        <div>
-          {renderThemeChanger()}
-        </div>
 
+        {/* Dark Mode and Toggle */}
+        <div className="z-10 flex">
+          <Menu as="div" className="relative inline-block text-left">
+            {/* Toggle Button */}
+            <div>
+              <Menu.Button className="inline-flex justify-center w-full py-2 text-sm font-medium rounded-md text-neutral-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                <GiHamburgerMenu
+                  className="w-6 h-6 dark:text-white"
+                  aria-hidden="true"
+                />
+              </Menu.Button>
+            </div>
+            <Transition
+              as={Fragment}
+              enter="transition ease-out duration-100"
+              enterFrom="transform opacity-0 scale-95"
+              enterTo="transform opacity-100 scale-100"
+              leave="transition ease-in duration-75"
+              leaveFrom="transform opacity-100 scale-100"
+              leaveTo="transform opacity-0 scale-95"
+            >
+              <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                {/* Home */}
+                <div className="px-1 py-1 ">
+                  <Menu.Item>
+                    {({ active }) => (
+                      <Link href="/">
+                        <button
+                          className={`${active
+                            ? "bg-violet-500 text-white"
+                            : "text-gray-900"
+                            } group flex w-full items-center rounded-md px-2 py-2 text-sm font-Poppins`}
+                        >
+                          <FaHome size={17} />
+                          <span className="ml-2">Home</span>
+                        </button>
+                      </Link>
+                    )}
+                  </Menu.Item>
+                  {/* Categories */}
+                  <Menu.Item>
+                    {({ active }) => (
+                      <Link href="/categories">
+                        <button
+                          className={`${active
+                            ? "bg-violet-500 text-white"
+                            : "text-gray-900"
+                            } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
+                        >
+                          <AiOutlineOrderedList size={17} />
+                          <span className="ml-2">Categories</span>
+                        </button>
+                      </Link>
+                    )}
+                  </Menu.Item>
+                </div>
+                {/* Create a New Section */}
+                {/* How To Buy */}
+                <div className="px-1 py-1 pb-2">
+                  <Menu.Item>
+                    {({ active }) => (
+                      <Link href="/howtobuy">
+                        <button
+                          className={`${active
+                            ? "bg-violet-500 text-white"
+                            : "text-gray-900"
+                            } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
+                        >
+                          <AiOutlineQuestionCircle size={17} />
+                          <span className="ml-2">How To Buy</span>
+                        </button>
+                      </Link>
+                    )}
+                  </Menu.Item>
+                  {/* About */}
+                  <Menu.Item>
+                    {({ active }) => (
+                      <Link href="/about">
+                        <button
+                          className={`${active
+                            ? "bg-violet-500 text-white"
+                            : "text-gray-900"
+                            } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
+                        >
+                          <RiFileHistoryLine size={17} />
+                          <span className="ml-2">About</span>
+                        </button>
+                      </Link>
+                    )}
+                  </Menu.Item>
+                </div>
+
+                {/* Contact */}
+                <div className="px-1 py-1 pb-2">
+                  <Menu.Item>
+                    {({ active }) => (
+                      <Link
+                        // target="_blank"
+                        rel="noopener noreferrer"
+                        href="/contact"
+                      >
+                        <button
+                          className={`${active
+                            ? "bg-violet-500 text-white"
+                            : "text-gray-900"
+                            } group flex w-72 items-center rounded-md px-2 py-1 text-sm font-Poppins`}
+                        >
+                          <AiOutlineMail size={17} />
+                          <span className="ml-2">Contact</span>
+                        </button>
+                      </Link>
+                    )}
+                  </Menu.Item>
+                </div>
+
+                {/* Contact */}
+                <div className="px-1 py-1 pb-2">
+                  <Menu.Item>
+                    {({ active }) => (
+                      <button
+                        className={`${active ? "bg-violet-500 text-white" : "text-gray-900"
+                          } group flex w-72 items-center rounded-md  py-1 text-sm font-Poppins`}
+                      >
+                        {renderThemeChanger()}
+                      </button>
+                    )}
+                  </Menu.Item>
+                </div>
+
+                {/* Bio Link */}
+                {/* <div className="px-1 py-1 pb-2">
+                <Menu.Item>
+                  {({ active }) => (
+                    <Link
+                      // target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://bio.link/johncanero"
+                    >
+                      <button
+                        className={`${
+                          active ? "bg-violet-500 text-white" : "text-gray-900"
+                        } group flex w-72 items-center rounded-md px-2 py-1 text-sm font-Poppins`}
+                      >
+                        <span className="ml-2">@johncanero</span>
+                      </button>
+                    </Link>
+                  )}
+                </Menu.Item>
+              </div> */}
+              </Menu.Items>
+            </Transition>
+          </Menu>
+        </div>
       </div>
     </div>
   );

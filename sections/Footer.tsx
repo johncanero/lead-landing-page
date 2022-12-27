@@ -12,7 +12,7 @@ const Footer = () => {
       {/* Title */}
       <div>
         <Link rel="noopener noreferrer" href="/">
-          <h1 className="text-3xl font-extrabold dark:text-orange-500 font-Montserrat">
+          <h1 className="hidden text-3xl font-extrabold dark:text-orange-500 font-Montserrat md:block">
             lead
           </h1>
         </Link>
