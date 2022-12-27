@@ -10,7 +10,7 @@ const index = () => {
       {/* Digital Marketing Services */}
       <div className="mx-8 mt-4 mb-12 md:mx-16 lg:mt-2 lg:mx-0 md:max-w-2xl lg:max-w-4xl font-Montserrat">
         <p className="text-justify text-md">
-          1. Search engine optimization (SEO): optimizing website content and structure to improve organic search engine rankings and visibility.
+          1. <span className="font-extrabold">Search engine optimization (SEO)</span>: optimizing website content and structure to improve organic search engine rankings and visibility.
         </p>
         <p className="text-justify text-md">
           2. Pay-per-click (PPC) advertising: using platforms like Google AdWords to place ads and pay for clicks on those ads.
