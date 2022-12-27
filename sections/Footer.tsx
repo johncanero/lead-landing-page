@@ -1,14 +1,18 @@
 import React from "react";
 import Link from "next/link";
+// Icons
+import { GrFacebook } from "@react-icons/all-files/gr/GrFacebook"
+import { GrTwitter } from "@react-icons/all-files/gr/GrTwitter"
+import { GrInstagram } from "@react-icons/all-files/gr/GrInstagram"
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between px-4 py-4 md:py-6">
-      
+    <footer className="flex justify-between px-4 py-4 md:py-6 font-Montserrat">
+
       {/* Title */}
       <div>
         <Link rel="noopener noreferrer" href="/">
-          <h1 className="mt-1 text-3xl font-extrabold dark:text-orange-500 font-Montserrat">
+          <h1 className="text-3xl font-extrabold dark:text-orange-500 font-Montserrat">
             lead
           </h1>
         </Link>
@@ -16,7 +20,7 @@ const Footer = () => {
 
 
       {/* Copyright */}
-      <div className="mt-4">
+      <div className="mt-1">
         <Link
           target="_blank"
           rel="noopener noreferrer"
@@ -30,6 +34,13 @@ const Footer = () => {
       </div>
 
       {/* Icons */}
+      <div>
+        <div className="flex gap-8">
+          <GrFacebook size={24} />
+          <GrTwitter size={24} />
+          <GrInstagram size={24}/>
+        </div>
+      </div>
 
     </footer>
   );
