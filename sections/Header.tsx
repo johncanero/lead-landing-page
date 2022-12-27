@@ -79,7 +79,6 @@ const Header = () => {
 
           {/* Header Links */}
           <div>
-
             <ul className="flex gap-12 mt-2 text-sm ml-14 lg:text-base font-Montserrat">
               <Link
                 rel="noopener noreferrer"
