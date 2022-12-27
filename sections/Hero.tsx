@@ -4,6 +4,7 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <div>
+      {/* Section 1 */}
       <div className='flex-col mt-10 mb-20 md:flex md:flex-wrap lg:flex-row'>
 
         {/* Column 1 */}
@@ -80,6 +81,11 @@ const Hero = () => {
             <h4 className='mt-1 font-medium text-neutral-500'>LEADS</h4>
           </div>
         </div>
+      </div>
+
+      {/* Section 2 */}
+      <div>
+        
       </div>
     </div>
   )
