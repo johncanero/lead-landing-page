@@ -92,6 +92,10 @@ const MenuDropdown = () => {
 
         {/* Dark Mode and Toggle */}
         <div className="z-10 flex">
+          {/* Tablet Beta Access */}
+          <button className="hidden px-4 py-2 mr-4 font-semibold bg-transparent border rounded md:block border-neutral-400 dark:border-neutral-600 hover:bg-orange-500 hover:text-white hover:border-transparent font-Montserrat">
+            Request Beta Access
+          </button>
           <Menu as="div" className="relative inline-block text-left">
             {/* Toggle Button */}
             <div>
@@ -167,7 +171,7 @@ const MenuDropdown = () => {
                   {/* About */}
                   <Menu.Item>
                     {({ active }) => (
-                      <Link  href="/get-a-quote">
+                      <Link href="/get-a-quote">
                         <button
                           className={`${active
                             ? "bg-violet-500 text-white"
