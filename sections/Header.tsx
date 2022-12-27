@@ -57,9 +57,18 @@ const Header = () => {
         <header className="flex items-center justify-between h-16 mt-1 md:mt-3">
 
           {/* Heading Title */}
-          <div>
+          <div className="flex">
             <Link rel="noopener noreferrer" href="/">
-              <h1 className="mt-1 text-4xl font-extrabold dark:text-orange-500 font-Montserrat">
+              <Image
+                src="/images/leadIcon2.png"
+                width={45}
+                height={45}
+                alt="aLogo"
+                className=""
+              />
+            </Link>
+            <Link rel="noopener noreferrer" href="/">
+              <h1 className="mt-1 ml-3 text-4xl font-extrabold dark:text-orange-500 font-Montserrat">
                 lead
               </h1>
             </Link>

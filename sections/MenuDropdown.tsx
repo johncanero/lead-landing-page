@@ -63,16 +63,23 @@ const MenuDropdown = () => {
     // Mobile Visibility
     <div className="">
       <div className="flex justify-between mt-4 text-right md:mt-6 lg:hidden top-16 md:w-full md:mx-2">
-        <div>
-          {/* Image */}
-          <Link rel="noopener noreferrer" href="/">
+        <Link rel="noopener noreferrer" href="/">
+          <div className="flex">
+            {/* Image */}
+            <Image
+              src="/images/leadIcon2.png"
+              width={40}
+              height={30}
+              alt="jLogo"
+              className=""
+            />
             <div className="flex">
-              <h1 className="mt-1 text-4xl font-extrabold dark:text-orange-500 font-Montserrat">
+              <h1 className="ml-3 text-4xl font-extrabold dark:text-orange-500 font-Montserrat">
                 lead
               </h1>
             </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
 
         <div>
           {renderThemeChanger()}

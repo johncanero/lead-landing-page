@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
           content="Market and Sales Automation"
         />
 
-        <link rel="shortcut icon" href="images/leadIcon.png" />
+        <link rel="shortcut icon" href="images/leadIcon2.png" />
       </Head>
 
       {/* Header, Main & Footer */}
