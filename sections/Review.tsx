@@ -4,15 +4,15 @@ import Image from 'next/image'
 const Review = () => {
   return (
     <div>
-      <div className='justify-center mt-16 md:pb-6 lg:pb-0 lg:flex lg:mx-36 md:mx-auto rounded-2xl bg-neutral-800'>
+      <div className='flex justify-center mt-16 md:pb-6 lg:pb-0 lg:mx-36 md:mx-auto rounded-2xl bg-neutral-800'>
         {/* Column 1 */}
-        <div className="relative -mt-10">
+        <div className="relative w-72">
           <Image
             src="/images/review/image-jeremy-large@2x.png"
-            width={290}
+            width={262}
             height={290}
             alt="people"
-            className="w-56 mx-auto rounded-xl lg:w-72"
+            className="absolute -mt-10"
           />
         </div>
 
