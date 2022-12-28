@@ -76,8 +76,8 @@ const MenuDropdown = () => {
             {/* Image */}
             <Image
               src="/images/leadIcon2.png"
-              width={40}
-              height={30}
+              width={35}
+              height={35}
               alt="jLogo"
               className=""
             />
