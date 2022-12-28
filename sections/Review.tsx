@@ -9,7 +9,7 @@ const Review = () => {
         <div className="relative w-72">
           <Image
             src="/images/review/image-jeremy-large@2x.png"
-            width={262}
+            width={286}
             height={290}
             alt="people"
             className="absolute -mt-10"
@@ -28,7 +28,7 @@ const Review = () => {
         </div>
 
         {/* Column 3 */}
-        <div className='mt-10 lg:mt-20 font-Montserrat'>
+        <div className='mt-10 mb-10 lg:mt-20 font-Montserrat'>
 
           {/* Column 3.1 */}
           <div className='mx-16 text-center lg:mx-0 lg:w-80'>
