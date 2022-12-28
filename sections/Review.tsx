@@ -6,13 +6,13 @@ const Review = () => {
     <div>
       <div className='flex justify-center mx-32 mt-16 rounded-2xl bg-neutral-800'>
         {/* Column 1 */}
-        <div>
+        <div className="relative -mt-10">
           <Image
             src="/images/review/image-jeremy-large@2x.png"
             width={290}
             height={290}
             alt="people"
-            className="rounded-xl "
+            className="rounded-xl"
           />
         </div>
 
@@ -41,7 +41,7 @@ const Review = () => {
           </div>
         </div>
       </div>
-
+      
     </div>
   )
 }
