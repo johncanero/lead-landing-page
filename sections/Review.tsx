@@ -4,15 +4,15 @@ import Image from 'next/image'
 const Review = () => {
   return (
     <div>
-      <div className='flex justify-center mt-16 md:pb-6 lg:pb-0 lg:mx-36 md:mx-auto rounded-2xl bg-neutral-800'>
+      <div className='justify-center pb-2 mt-20 pt-72 lg:pt-0 lg:flex lg:pb-0 lg:mx-36 md:mx-auto rounded-2xl bg-neutral-800'>
         {/* Column 1 */}
-        <div className="relative w-72">
+        <div className="relative w-48 mx-auto lg:mx-0 lg:w-72">
           <Image
             src="/images/review/image-jeremy-large@2x.png"
-            width={286}
+            width={285}
             height={290}
             alt="people"
-            className="absolute -mt-10"
+            className="absolute -mt-80 lg:-mt-10"
           />
         </div>
 
@@ -32,9 +32,8 @@ const Review = () => {
 
           {/* Column 3.1 */}
           <div className='mx-16 text-center lg:mx-0 lg:w-80'>
-            <h2 className='text-4xl font-medium text-white'>It just <span className='font-bold '>works.</span></h2>
-            <p className='mt-10 text-lg text-zinc-400'>"I really like how it is an all-in-one solution that handle many of the
-              tasks that you would normally need seperate tools to do the same job. This thing is a miracle worker."</p>
+            <h2 className='text-3xl font-medium text-white md:text-4xl'>It just <span className='font-bold '>works.</span></h2>
+            <p className='mt-10 md:text-lg text-zinc-400'>"I really like how it is an all-in-one solution that handle many of the tasks that you would normally need seperate tools to do the same job. This thing is a miracle worker."</p>
             <div className='mt-10'>
               <p className='font-bold text-white'>JEREMY ROBINSON</p>
               <p className='font-medium text-zinc-400 '>CMO, FYLO</p>
