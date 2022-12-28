@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- markdownlint-configure-file {
+  "MD013": {
+    "code_blocks": false,
+    "tables": false
+  },
+  "MD033": false,
+  "MD041": false
+} -->
 
-## Getting Started
+<div align="center">
+  <a href="https://lead-digital-by-johncanero.vercel.app/" target="_blank">
+    <img alt="lead-landing-page-digital-marketing" height="100" src="./public/images/leadIcon2.png"/>
+  </a>
+</div>
 
-First, run the development server:
+<div align="center">
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# Lead Digital Marketing
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This is the Lead Landing Page: A super solution for your business & marketing and
+sales automation. It would you scale your outreach to get more leads for your company.
+Request Beta Access to TRY!
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+</div>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Website
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+🖥️ [https://lead-digital-by-johncanero.vercel.app/]
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+✍️ Project by John Cañero
 
-## Learn More
+## Responsive Design
 
-To learn more about Next.js, take a look at the following resources:
+🪟: [Desktop - Tablet - Mobile]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Desktop Responsive Light
+![Desktop View - Lead Landing Page - Digital Marketing Website](./public/responsive/TechJamDesktopLight.jpg)
+Desktop Responsive Light: How To Buy
+![Desktop View - Lead Landing Page - Digital Marketing Website](./public/responsive/TechJamDesktopLightHowToBuy.jpg)
+Desktop Responsive Dark
+![Desktop View - Lead Landing Page - Digital Marketing Website](./public/responsive/TechJamDesktopDark.jpg)
+Tablet Responsive | Light and Dark
+![Tablet View - Lead Landing Page - Digital Marketing Website](./public/responsive/TechJamTabletLightDark.jpg)
+Mobile Responsive | Light and Dark
+![Mobile View - Lead Landing Page - Digital Marketing Website](./public/responsive/TechJamMobileLightDark.jpg)
