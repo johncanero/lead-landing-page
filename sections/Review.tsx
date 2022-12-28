@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Review = () => {
   return (
     <div>
-      <div className='flex justify-center mx-32 mt-16 bg-zinc-800 gap-44'>
+      <div className='flex justify-center mx-32 mt-16 rounded-2xl bg-zinc-800 gap-44'>
         {/* Column 1 */}
         <div>
           <Image
