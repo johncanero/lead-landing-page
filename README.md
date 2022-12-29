@@ -18,7 +18,7 @@
 # Lead Digital Marketing
 
 This is the Lead Landing Page: A super solution for your business & marketing and
-sales automation. It would you scale your outreach to get more leads for your company.
+sales automation. It would scale your outreach to get more leads for your company.
 Request Beta Access to TRY!
 
 </div>
