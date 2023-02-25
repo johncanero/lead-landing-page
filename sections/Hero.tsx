@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <div>
+    <div className='flex justify-center px-4 mx-auto md:px-0'>
       {/* Section 1 */}
       <div className='flex-col mt-10 md:flex md:flex-wrap lg:flex-row'>
 
@@ -30,9 +30,9 @@ const Hero = () => {
                 className="hidden w-40 ml-40 md:w-72 dark:block rounded-xl md:ml-80"
               />
 
-              <h1 className='max-w-2xl text-4xl font-medium md:mt-1 md:text-7xl font-Montserrat dark:shadow-sm md:text-left'>A <span className='font-extrabold'>super solution</span> for your <span className='font-extrabold'>business.</span></h1>
+              <h1 className='text-4xl font-medium md:mt-1 md:text-7xl font-Montserrat dark:shadow-sm md:text-left'>A <span className='font-extrabold'>super solution</span> for your <span className='font-extrabold'>business.</span></h1>
 
-              <p className='font-medium tracking-wider w-96 md:max-w-sm mt-7 md:mt-14 font-Montserrat text-neutral-700 dark:text-neutral-500'>Our marketing team and sales automations <br></br>help you scale your outreach to get <br></br> more leads for your company.</p>
+              <p className='font-medium tracking-wider md:max-w-sm mt-7 md:mt-14 font-Montserrat text-neutral-700 dark:text-neutral-500'>Our marketing team and sales automations <br></br>help you scale your outreach to get <br></br> more leads for your company.</p>
 
               <button className="px-6 py-3 mt-8 mr-4 font-semibold text-white bg-transparent bg-orange-500 rounded md:mt-16 hover:text-black font-Montserrat">
                 Request Beta Access

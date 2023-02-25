@@ -10,6 +10,12 @@
           "@layer"
         ]
       }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
     ]
   },
   "browserslist": [
