@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
 // Icons
-import { GrFacebook } from "@react-icons/all-files/gr/GrFacebook"
-import { GrTwitter } from "@react-icons/all-files/gr/GrTwitter"
+import { GrFacebook } from "@react-icons/all-files/gr/GrFacebook" 
+import { GrTwitter } from  "@react-icons/all-files/gr/GrTwitter"
 import { GrInstagram } from "@react-icons/all-files/gr/GrInstagram"
 
 const Footer = () => {
   return (
-    <footer className="py-10 md:mx-2 md:py-16 md:justify-between md:flex font-Montserrat">
+    <footer className="hidden py-10 md:mb-0 md:mx-2 md:py-16 md:justify-between md:flex font-Montserrat">
 
       {/* Title */}
       <div>

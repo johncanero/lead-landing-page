@@ -7,7 +7,7 @@
 @layer base {
     body {
         @apply px-4 mx-auto md:px-0 sm:max-w-sm md:max-w-2xl lg:max-w-7xl;
-        @apply dark:bg-neutral-800 dark:text-gray-100   text-gray-900
+        @apply text-gray-900 dark:bg-neutral-800 dark:text-gray-100;
     }
 }
 
