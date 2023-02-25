@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const index = () => {
   return (
-    <div>
-      <h1 className="mt-6 text-2xl font-bold text-center text-neutral-600 lg:text-left md:text-3xl font-Montserrat dark:text-neutral-500">
+    <div className="mb-32 md:mb-0">
+      <h1 className="mt-6 text-2xl font-bold text-center text-neutral-600 lg:text-left md:text-2xl font-Montserrat dark:text-neutral-500">
         Digital Marketing Services
       </h1>
 
