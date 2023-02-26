@@ -4,14 +4,15 @@ import Image from "next/image";
 const index = () => {
   return (
     <div className="mb-32 md:mb-0 lg:px-32">
-      <h1 className="mt-6 text-2xl font-bold text-center text-neutral-600 lg:text-left md:text-2xl font-Montserrat dark:text-neutral-500">
+      <h1 className="mt-6 text-2xl font-bold text-center mb-3 text-neutral-600
+       md:text-2xl font-Montserrat dark:text-neutral-300">
         Digital Marketing Services
       </h1>
 
 
-      <div className="flex">
+      <div className="lg:flex justify-center">
         {/* Digital Marketing Services */}
-        <div className="mx-8 mt-4 mb-12 md:mx-16 lg:mt-2 lg:mx-0 md:max-w-2xl lg:max-w-4xl font-Montserrat">
+        <div className="mx-8 mt-4 md:mx-16 lg:mt-2 lg:mx-0 md:max-w-2xl lg:max-w-4xl font-Montserrat">
           <p className="text-justify text-md">
             1. <span className="font-extrabold dark:text-orange-400">Search engine optimization (SEO)</span>: optimizing website content and structure to improve organic search engine rankings and visibility.
           </p>
@@ -75,14 +76,25 @@ const index = () => {
           </p>
         </div>
 
-        <div className="hidden pl-12 lg:block">
-          <Image
-            src="/images/leadIcon2.png"
-            width={350}
-            height={350}
-            alt="aLogo"
-            className=""
-          />
+        <div className="flex-col mx-8 md:ml-0">
+          <div>
+            {/* Mobile and Tablet */}
+            <Image
+              src="/images/hero/orangeLeadLandscape2.jpg"
+              width={380}
+              height={370}
+              alt="orangeLead Landscape"
+              className="mt-6 lg:hidden mx-auto rounded-xl"
+            />
+            {/* Desktop */}
+            <Image
+              src="/images/hero/orangeLeadPortrait2.jpg"
+              width={380}
+              height={370}
+              alt="orangeLead Portrait"
+              className="hidden md:ml-20 rounded-xl lg:block"
+            />
+          </div>
         </div>
       </div>
     </div>
