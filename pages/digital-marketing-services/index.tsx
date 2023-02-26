@@ -84,7 +84,7 @@ const index = () => {
               width={380}
               height={370}
               alt="orangeLead Landscape"
-              className="mt-6 lg:hidden mx-auto rounded-xl"
+              className="mt-6 lg:hidden mx-auto rounded-xl transition duration-300 ease-in-out bg-fixed opacity-100 hover:opacity-80"
             />
             {/* Desktop */}
             <Image
@@ -92,7 +92,7 @@ const index = () => {
               width={340}
               height={370}
               alt="orangeLead Portrait"
-              className="hidden md:ml-20 rounded-xl lg:block"
+              className="hidden md:ml-20 rounded-xl lg:block transition duration-300 ease-in-out bg-fixed opacity-100 hover:opacity-80"
             />
           </div>
         </div>
