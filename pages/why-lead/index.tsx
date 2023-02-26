@@ -16,8 +16,8 @@ const index = () => {
           <Image
             width={650}
             height={450}
-            className="w-full h-full border rounded-3xl"
-            src="/images/whylead/whyLead2.jpg"
+            className="w-full h-full rounded-3xl"
+            src="/images/whylead/whyLead3.jpg"
             alt="Why Lead Feature"
           />
         </div>
@@ -31,8 +31,8 @@ const index = () => {
           <Image
             width={500}
             height={300}
-            className="md:rounded-3xl border"
-            src="/images/whylead/whyLead2.jpg"
+            className="md:rounded-3xl"
+            src="/images/whylead/whyLead3.jpg"
             alt="Why Lead Feature"
           />
         </div>
