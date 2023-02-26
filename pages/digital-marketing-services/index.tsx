@@ -89,7 +89,7 @@ const index = () => {
             {/* Desktop */}
             <Image
               src="/images/hero/orangeLeadPortrait2.jpg"
-              width={380}
+              width={340}
               height={370}
               alt="orangeLead Portrait"
               className="hidden md:ml-20 rounded-xl lg:block"
