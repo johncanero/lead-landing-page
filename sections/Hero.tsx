@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+// FramerMotion
+import { motion } from "framer-motion"
 
 const Hero = () => {
   return (
@@ -12,25 +14,42 @@ const Hero = () => {
           {/* Column 1.1 */}
           <div className='relative'>
             <div className='mt-10 md:absolute md:mt-14'>
-              {/* Dark Curve Line */}
-              <Image
-                src="/images/hero/patternCurveLine.png"
-                width={300}
-                height={300}
-                alt="orangeLead Curve"
-                className="w-40 ml-40 md:w-72 dark:hidden rounded-xl md:ml-80"
-              />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: 0.2,
+                  duration: 0.5,
+                }}
+              >
+                {/* Dark Curve Line */}
+                <Image
+                  src="/images/hero/patternCurveLine.png"
+                  width={300}
+                  height={300}
+                  alt="orangeLead Curve"
+                  className="w-40 ml-40 md:w-72 dark:hidden rounded-xl md:ml-80"
+                />
 
-              {/* Light Curve Line */}
-              <Image
-                src="/images/hero/patternCurveLineWhite.png"
-                width={300}
-                height={300}
-                alt="orangeLead Curve"
-                className="hidden w-40 ml-40 md:w-72 dark:block rounded-xl md:ml-80"
-              />
+                {/* Light Curve Line */}
+                <Image
+                  src="/images/hero/patternCurveLineWhite.png"
+                  width={300}
+                  height={300}
+                  alt="orangeLead Curve"
+                  className="hidden w-40 ml-40 md:w-72 dark:block rounded-xl md:ml-80"
+                />
+              </motion.div>
 
-              <h1 className='text-4xl font-medium md:mt-1 md:text-7xl font-Montserrat dark:shadow-sm md:text-left'>A <span className='font-extrabold'>super solution</span> for your <span className='font-extrabold'>business.</span></h1>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: 0.2,
+                  duration: 0.5,
+                }}>
+                <h2 className='text-4xl font-medium md:mt-1 md:text-7xl font-Montserrat dark:shadow-sm md:text-left'>A <span className='font-extrabold'>super solution</span> for your <span className='font-extrabold'>business.</span></h2>
+              </motion.div>
 
               <p className='font-medium tracking-wider md:max-w-sm mt-7 md:mt-14 font-Montserrat text-neutral-700 dark:text-neutral-500'>Our marketing team and sales automations <br></br>help you scale your outreach to get <br></br> more leads for your company.</p>
 
@@ -39,7 +58,13 @@ const Hero = () => {
               </button>
             </div>
 
-            <div className='md:ml-56 lg:ml-96'>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                duration: 0.3,
+              }}
+              className='md:ml-56 lg:ml-96'>
               {/* Mobile */}
               <Image
                 src="/images/hero/orangeLeadLandscape2.jpg"
@@ -57,14 +82,21 @@ const Hero = () => {
                 className="hidden md:ml-20 rounded-xl md:block"
               />
 
-            </div>
+            </motion.div>
 
           </div>
         </div>
 
         {/* Column 2 */}
 
-        <div className='relative justify-center mt-16 text-center lg:text-left lg:mt-0 md:gap-40 md:flex lg:flex-col lg:ml-56 font-Poppins'>
+        <motion.div
+          initial={{ x: 85, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.6,
+            duration: 0.75,
+          }}
+          className='relative justify-center mt-16 text-center lg:text-left lg:mt-0 md:gap-40 md:flex lg:flex-col lg:ml-56 font-Poppins'>
 
           <div className='mt-14 md:mt-0'>
             <h2 className='text-5xl font-bold '>2K+</h2>
@@ -80,12 +112,12 @@ const Hero = () => {
             <h2 className='text-5xl font-bold '>1.2M</h2>
             <h4 className='mt-1 font-medium text-neutral-500'>LEADS</h4>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Section 2 */}
       <div>
-        
+
       </div>
     </div>
   )

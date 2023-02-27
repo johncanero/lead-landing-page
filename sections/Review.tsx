@@ -1,12 +1,20 @@
 import React from 'react'
 import Image from 'next/image'
+// Framer-Motion
+import { motion } from "framer-motion"
 
 const Review = () => {
   return (
     <div>
       <div className='justify-center pb-2 mx-4 mt-20 mb-32 pt-72 lg:pt-0 lg:flex lg:pb-0 lg:mx-36 md:mx-10 rounded-2xl dark:shadow-sm dark:shadow-black bg-neutral-800'>
         {/* Column 1 */}
-        <div className="relative w-48 mx-auto lg:mx-0 lg:w-72">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            duration: 0.3,
+          }}
+          className="relative w-48 mx-auto lg:mx-0 lg:w-72">
           <Image
             src="/images/review/image-jeremy-large@2x.png"
             width={285}
@@ -14,7 +22,7 @@ const Review = () => {
             alt="people"
             className="absolute -mt-80 lg:-mt-10"
           />
-        </div>
+        </motion.div>
 
         {/* Column 2 */}
         <div>
@@ -28,8 +36,13 @@ const Review = () => {
         </div>
 
         {/* Column 3 */}
-        <div className='mt-10 mb-10 lg:mt-20 font-Montserrat'>
-
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            duration: 0.3,
+          }}
+          className='mt-10 mb-10 lg:mt-20 font-Montserrat'>
           {/* Column 3.1 */}
           <div className='mx-16 text-center lg:mx-0 lg:w-80'>
             <h2 className='text-3xl font-medium text-white md:text-4xl'>It just <span className='font-bold '>works.</span></h2>
@@ -39,7 +52,7 @@ const Review = () => {
               <p className='font-medium text-zinc-400 '>CMO, FYLO</p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
     </div>
