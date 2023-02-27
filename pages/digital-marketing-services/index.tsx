@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+// Framer-Motion
+import { motion } from "framer-motion"
 
 const index = () => {
   return (
@@ -77,7 +79,13 @@ const index = () => {
         </div>
 
         <div className="flex-col mx-8 md:ml-0">
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              duration: 0.3,
+            }}
+          >
             {/* Mobile and Tablet */}
             <Image
               src="/images/hero/orangeLeadLandscape2.jpg"
@@ -94,7 +102,7 @@ const index = () => {
               alt="orangeLead Portrait"
               className="hidden md:ml-20 rounded-xl lg:block transition duration-300 ease-in-out bg-fixed opacity-100 hover:opacity-80"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

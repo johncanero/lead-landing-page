@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-// FramerMotion
+// Framer-Motion
 import { motion } from "framer-motion"
 
 const Hero = () => {

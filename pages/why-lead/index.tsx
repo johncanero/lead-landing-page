@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+// Framer-Motion
+import { motion } from "framer-motion"
 
 const index = () => {
   return (
@@ -11,7 +13,12 @@ const index = () => {
       </h1>
 
       {/* Desktop */}
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{
+          duration: 0.3,
+        }}
         className='flex justify-center mt-4'>
         <div className='hidden lg:block'>
           <Image
@@ -22,11 +29,16 @@ const index = () => {
             alt="Why Lead Feature"
           />
         </div>
-      </div>
+      </motion.div>
 
 
       {/* Tablet & Mobile */}
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{
+          duration: 0.3,
+        }}
         className='flex justify-center'>
         <div className='lg:hidden '>
           <Image
@@ -37,7 +49,7 @@ const index = () => {
             alt="Why Lead Feature"
           />
         </div>
-      </div>
+      </motion.div>
 
       {/* Paragraph */}
       <div className="sm:mx-8 md:mx-20 lg:mx-32 mt-5">
