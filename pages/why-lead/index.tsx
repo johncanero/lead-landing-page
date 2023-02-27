@@ -40,7 +40,7 @@ const index = () => {
       </div>
 
       {/* Paragraph */}
-      <div className="sm:mx-8 md:mx-20 lg:mx-32 mt-4">
+      <div className="sm:mx-8 md:mx-20 lg:mx-32 mt-5">
         <p className="mt-3 text-justify text-md">
           Welcome to<Link href="/"><span className="font-extrabold dark:text-orange-500">&nbsp;Lead</span></Link>, your ultimate solution to scaling your company's outreach and generating more leads! <span className="font-semibold">Our website provides a comprehensive suite of marketing team and sales automation tools designed to help you expand your reach and achieve your business goals.</span>
         </p>

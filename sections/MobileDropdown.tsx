@@ -12,6 +12,8 @@ import { AiOutlineOrderedList } from "@react-icons/all-files/ai/AiOutlineOrdered
 import { AiOutlineQuestionCircle } from "@react-icons/all-files/ai/AiOutlineQuestionCircle";
 import { RiFileHistoryLine } from "@react-icons/all-files/ri/RiFileHistoryLine";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
+// FramerMotion
+import { motion } from "framer-motion"
 
 const MenuDropdown = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -70,7 +72,13 @@ const MenuDropdown = () => {
   return (
     // Mobile Visibility
     <div className="px-4 md:px-10">
-      <div className="flex justify-between mt-4 text-right md:mt-6 lg:hidden top-16 md:w-full md:mx-2">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{
+          duration: 0.3,
+        }}
+        className="flex justify-between mt-4 text-right md:mt-6 lg:hidden top-16 md:w-full md:mx-2">
         <Link rel="noopener noreferrer" href="/">
           <div className="flex">
             {/* Image */}
@@ -247,7 +255,7 @@ const MenuDropdown = () => {
             </Transition>
           </Menu>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

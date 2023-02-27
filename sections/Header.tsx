@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import Button from "../components/Button";
+// FramerMotion
+import { motion } from "framer-motion"
 
 const Header = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -57,8 +59,14 @@ const Header = () => {
         <header className="flex items-center justify-between h-16 mt-1 md:mt-3">
 
           {/* Heading Title */}
-          <div className="flex">
-            <div className="flex">
+          <div
+            className="flex" >
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                duration: 0.3,
+              }} className="flex">
               <Link rel="noopener noreferrer" href="/">
                 <Image
                   src="/images/leadIcon2.png"
@@ -73,8 +81,7 @@ const Header = () => {
                   lead
                 </h1>
               </Link>
-            </div>
-
+            </motion.div>
           </div>
 
           {/* Header Links */}
@@ -131,7 +138,7 @@ const Header = () => {
           </div>
         </header>
       </div>
-    </div>
+    </div >
   );
 };
 
