@@ -24,8 +24,8 @@ const index = () => {
           <Image
             width={650}
             height={450}
-            className="w-full h-full rounded-3xl transition duration-300 ease-in-out bg-fixed opacity-100 hover:opacity-80"
-            src="/images/whylead/whyLead3.jpg"
+            className="w-full h-full rounded-3xl"
+            src="/images/whylead/whyLead4Compressed.jpg"
             alt="Why Lead Feature"
           />
         </div>
@@ -44,8 +44,8 @@ const index = () => {
           <Image
             width={500}
             height={300}
-            className="md:rounded-3xl transition duration-300 ease-in-out bg-fixed opacity-100 hover:opacity-80"
-            src="/images/whylead/whyLead3.jpg"
+            className="md:rounded-3xl"
+            src="/images/whylead/whyLead4Compressed.jpg"
             alt="Why Lead Feature"
           />
         </div>
