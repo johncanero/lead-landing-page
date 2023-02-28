@@ -13,7 +13,7 @@ const Hero = () => {
         <div className='md:flex'>
           {/* Column 1.1 */}
           <div className='relative'>
-            <div className='mt-10 md:absolute md:mt-14'>
+            <div className='mt-1 md:absolute md:mt-12'>
               <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -79,7 +79,7 @@ const Hero = () => {
                 width={380}
                 height={370}
                 alt="orangeLead Portrait"
-                className="hidden md:ml-20 rounded-xl md:block"
+                className="hidden md:ml-20 rounded-xl md:block mt-3"
               />
 
             </motion.div>
