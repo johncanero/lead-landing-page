@@ -15,8 +15,8 @@ const index = () => {
         {/* Digital Marketing Services */}
         <div className="mx-8 mt-4 md:mx-16 lg:mt-4 lg:mx-0 md:max-w-2xl lg:max-w-3xl font-Montserrat">
 
-          <h2 className="font-semibold lg:text-xl ">Looking to take your business to the next level?</h2>
-          <h2 className="mt-3 font-bold lg:text-5xl">Look no further than <span className="dark:text-orange-500">Lead!</span></h2>
+          <h2 className="font-semibold text-lg lg:text-xl ">Looking to take your business to the next level?</h2>
+          <h2 className="mt-3 font-bold text-2xl md:text-3xl lg:text-5xl">Look no further than <span className="dark:text-orange-500">Lead!</span></h2>
           <p className="mt-4 dark:text-neutral-400">
             Our powerful marketing team and sales automation tools are designed to help you scale your outreach and generate more leads than ever before.
           </p>
