@@ -40,11 +40,11 @@ const index = () => {
           duration: 0.3,
         }}
         className='flex justify-center'>
-        <div className='lg:hidden '>
+        <div className='lg:hidden w-80 md:w-auto '>
           <Image
             width={500}
             height={300}
-            className="md:rounded-3xl"
+            className="rounded-3xl"
             src="/images/whylead/whyLead4Compressed.jpg"
             alt="Why Lead Feature"
           />
