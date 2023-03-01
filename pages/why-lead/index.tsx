@@ -7,8 +7,7 @@ import { motion } from "framer-motion"
 const index = () => {
   return (
     <div className="mb-32 md:mb-0 lg:px-32">
-      <h1 className="mt-6 text-2xl font-bold text-center mb-3 text-neutral-600
-       md:text-2xl font-Montserrat dark:text-neutral-300">
+      <h1 className="mt-6 mb-3 text-2xl font-bold text-center text-neutral-600 md:text-2xl font-Montserrat dark:text-neutral-300">
         Why Lead
       </h1>
 
@@ -53,7 +52,7 @@ const index = () => {
       </motion.div>
 
       {/* Paragraph */}
-      <div className="sm:mx-8 md:mx-20 lg:mx-32 mt-5">
+      <div className="mt-5 sm:mx-8 md:mx-20 lg:mx-32">
         <p className="mt-3 text-justify text-md">
           Welcome to<Link href="/"><span className="font-extrabold dark:text-orange-500">&nbsp;Lead</span></Link>, your ultimate solution to scaling your company's outreach and generating more leads! <span className="font-semibold">Our website provides a comprehensive suite of marketing team and sales automation tools designed to help you expand your reach and achieve your business goals.</span>
         </p>
@@ -67,7 +66,7 @@ const index = () => {
         </p>
 
         {/* Chat GPT */}
-        <p className="mt-4 text-xs font-ShareTechMono md:text-sm dark:text-orange-500">
+        <p className="mt-4 text-xs font-ShareTechMono md:text-sm dark:text-neutral-600">
           From ChatGPT: Optimizing Language Model for Dialogue
         </p>
       </div>

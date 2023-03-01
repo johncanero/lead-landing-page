@@ -79,7 +79,7 @@ const Hero = () => {
                 width={380}
                 height={370}
                 alt="orangeLead Portrait"
-                className="hidden md:ml-20 rounded-xl md:block mt-3"
+                className="hidden mt-3 md:ml-20 rounded-xl md:block"
               />
 
             </motion.div>
