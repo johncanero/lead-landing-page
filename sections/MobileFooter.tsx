@@ -5,7 +5,7 @@ import { FaHome } from "@react-icons/all-files/fa/FaHome";
 import { HiOutlineArrowsExpand } from "@react-icons/all-files/hi/HiOutlineArrowsExpand"
 import { RiQuestionAnswerLine } from "@react-icons/all-files/ri/RiQuestionAnswerLine"
 import { GiNetworkBars } from "@react-icons/all-files/gi/GiNetworkBars"
-import { AiOutlineLinkedin } from "@react-icons/all-files/ai/AiOutlineLinkedin"
+import { BsEnvelope } from "@react-icons/all-files/bs/BsEnvelope";
 
 const MobileFooter = () => {
     return (
@@ -37,10 +37,10 @@ const MobileFooter = () => {
 
 
 
-                {/* LinkedIn */}
-                <Link href="https://www.linkedin.com/company/upskill-hub/" rel="noopener noreferrer">
+                {/* Contact*/}
+                <Link href="/contact" rel="noopener noreferrer">
                     <button className="hover:text-neutral-700 dark:hover:text-gray-50">
-                        <AiOutlineLinkedin className="ml-3" size={22} />
+                        <BsEnvelope className="ml-3" size={22} />
                         <p className="mt-1 text-xs text-center font-Poppins">Contact</p>
                     </button>
                 </Link>
