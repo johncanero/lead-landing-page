@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 const Review = () => {
   return (
     <div>
-      <div className='justify-center pb-2 mx-4 mt-20 mb-32 pt-72 lg:pt-0 lg:flex lg:pb-0 lg:mx-36 md:mx-10 rounded-2xl dark:shadow-sm dark:shadow-black bg-neutral-800'>
+      <div className='justify-center pb-2 mx-4 mt-20 mb-12 pt-72 lg:pt-0 lg:flex lg:pb-0 lg:mx-36 md:mx-10 rounded-2xl dark:shadow-sm dark:shadow-black bg-neutral-800'>
         {/* Column 1 */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -54,7 +54,6 @@ const Review = () => {
           </div>
         </motion.div>
       </div>
-
     </div>
   )
 }

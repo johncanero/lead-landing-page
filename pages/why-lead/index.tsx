@@ -25,7 +25,7 @@ const index = () => {
             width={650}
             height={450}
             className="w-full h-full rounded-3xl"
-            src="/images/whylead/whyLead4Compressed.jpg"
+            src="/images/whylead/whyLead5Compressed.jpg"
             alt="Why Lead Feature"
           />
         </div>
@@ -45,7 +45,7 @@ const index = () => {
             width={500}
             height={300}
             className="rounded-3xl"
-            src="/images/whylead/whyLead4Compressed.jpg"
+            src="/images/whylead/whyLead5Compressed.jpg"
             alt="Why Lead Feature"
           />
         </div>

@@ -88,7 +88,7 @@ const index = () => {
           >
             {/* Mobile and Tablet */}
             <Image
-              src="/images/hero/orangeLeadLandscape2.jpg"
+              src="/images/hero/orangeLeadLandscapeDigital2-min.jpg"
               width={380}
               height={370}
               alt="orangeLead Landscape"
@@ -96,7 +96,7 @@ const index = () => {
             />
             {/* Desktop */}
             <Image
-              src="/images/hero/orangeLeadPortrait2.jpg"
+              src="/images/hero/orangeLeadPortraitDigital2-min.jpg"
               width={340}
               height={370}
               alt="orangeLead Portrait"
