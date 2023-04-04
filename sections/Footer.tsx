@@ -24,7 +24,7 @@ const Footer = () => {
         <Link
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/johncanero/"
+          href="https://johncanero.com/"
         >
           <span className="mr-2 font-bold text-gray-900 dark:text-orange-500">
             John Cañero
