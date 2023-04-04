@@ -1,7 +1,7 @@
 import React from "react";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 import { GoLocation } from "@react-icons/all-files/go/GoLocation";
 import { IoMdCall } from "@react-icons/all-files/io/IoMdCall";
 import { BsEnvelope } from "@react-icons/all-files/bs/BsEnvelope";
@@ -18,6 +18,17 @@ const contact = () => {
 
   return (
     <div>
+      <Head>
+        <title>Contact / Lead</title>
+        <meta
+          name="description"
+          content="Contact: Lead"
+        />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content="Contact: Lead" />
+        <meta property="og:description" content="Contact: Lead" />
+        {/* Sitemap */}
+      </Head>
       <div className="container flex justify-center mx-auto mt-8 md:px-6">
         <section className="mb-32 text-gray-800">
           {/* Background Image */}
@@ -138,7 +149,7 @@ const contact = () => {
                         name="name"
                         id="name"
                         placeholder="Enter your name"
-                        className="px-3 py-3 mx-auto mt-2 text-gray-800 bg-white border-2 border-gray-400 rounded-lg  md:mx-0 lg:w-11/12 md:w-56 w-72 dark:bg-black60 dark:border-neutral-400 focus:border-gray-800 focus:outline-none"
+                        className="px-3 py-3 mx-auto mt-2 text-gray-800 bg-white border-2 border-gray-400 rounded-lg md:mx-0 lg:w-11/12 md:w-56 w-72 dark:bg-black60 dark:border-neutral-400 focus:border-gray-800 focus:outline-none"
                       />
                     </div>
 
@@ -164,7 +175,7 @@ const contact = () => {
                         Your Message
                       </h2>
                       <textarea
-                        className="block mt-2 text-gray-800 transition ease-in-out bg-white border-2 rounded form-control lg:w-11/12 px-3 py-3 md:w-56 w-72 h-52 bg-clip-padding font-Poppins dark:bg-black60 dark:border-neutral-400 focus:outline-none"
+                        className="block px-3 py-3 mt-2 text-gray-800 transition ease-in-out bg-white border-2 rounded form-control lg:w-11/12 md:w-56 w-72 h-52 bg-clip-padding font-Poppins dark:bg-black60 dark:border-neutral-400 focus:outline-none"
                         id="exampleFormControlTextarea13"
                         placeholder="Forward the message to GMAIL or LinkedIn"
                       ></textarea>
