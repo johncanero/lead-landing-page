@@ -13,8 +13,6 @@
   </a>
 </div>
 
-<div align="center">
-
 # Lead Digital Marketing
 
 This is the Lead Landing Page: A super solution for your business & marketing and
@@ -33,13 +31,17 @@ Request Beta Access to TRY!
 
 🪟: [Desktop - Tablet - Mobile]
 
+Responsive Feature Applicaiton
+![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalDesktopLight.png)
+![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalDesktopDark.png)
+![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadLandingPageApplicationFeature.png)
 Desktop Responsive Light
-![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/leadLandingPageLight.jpg)
+![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalDesktopLight.jpg)
 Desktop Responsive Light: How To Buy
-![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/leadLandingPageServicesLight.jpg)
+![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalDesktopLightHowToBuy.jpg)
 Desktop Responsive Dark
-![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/leadLandingPageDark.jpg)
+![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalDesktopDark.jpg)
 Tablet Responsive | Light and Dark
-![Tablet View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/leadLandingPageTablet.jpg)
+![Tablet View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalTablet.jpg)
 Mobile Responsive | Light and Dark
-![Mobile View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/leadLandingPageMobile.jpg)
+![Mobile View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalMobile.jpg)
