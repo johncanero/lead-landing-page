@@ -31,7 +31,7 @@ Request Beta Access to TRY!
 
 🪟: [Desktop - Tablet - Mobile]
 
-Responsive Feature Applicaiton
+Responsive Feature Application
 ![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalDesktopLight.png)
 ![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalDesktopDark.png)
 ![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadLandingPageApplicationFeature.png)
