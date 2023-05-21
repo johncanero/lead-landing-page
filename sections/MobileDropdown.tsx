@@ -12,8 +12,14 @@ import { AiOutlineOrderedList } from "@react-icons/all-files/ai/AiOutlineOrdered
 import { AiOutlineQuestionCircle } from "@react-icons/all-files/ai/AiOutlineQuestionCircle";
 import { RiFileHistoryLine } from "@react-icons/all-files/ri/RiFileHistoryLine";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
+import { ArrowLeftOnRectangleIcon } from '@heroicons/react/24/outline';
+
 // FramerMotion
 import { motion } from "framer-motion"
+// NextAuth
+import { useSession, signIn, signOut } from "next-auth/react"
+import LoginMobile from "../components/LoginMobile";
+
 
 const MenuDropdown = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -219,6 +225,41 @@ const MenuDropdown = () => {
 
                 {/* Contact */}
                 <div className="px-1 py-1 pb-2">
+                  {/* Profile */}
+                  <Menu.Item>
+                    {({ active }) => (
+                      <Link href="/profile">
+                        {/* Login */}
+                        <button
+                          onClick={(e) => {
+                            e.preventDefault();
+                            signIn('google');
+                          }}
+                          className='flex items-center px-2 py-2 text-sm text-gray-900 rounded-md group w-72 font-Poppins'
+                        >
+                          <LoginMobile />
+                        </button>
+                      </Link>
+                    )}
+                  </Menu.Item>
+
+                  {/* Logout */}
+                  <Menu.Item>
+                    {/* Logout */}
+                    {({ active }) => (
+                      <button
+                        className={`${active
+                          ? "bg-blue-500 text-white"
+                          : "text-gray-900"
+                          } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
+                        onClick={(() => signOut())}
+                      >
+                        <ArrowLeftOnRectangleIcon className="w-6" />
+                        <span className="ml-2 font-medium font-OpenSans">Logout</span>
+                      </button>
+                    )}
+                  </Menu.Item>
+
                   <Menu.Item>
                     {({ active }) => (
                       <button
@@ -230,27 +271,6 @@ const MenuDropdown = () => {
                     )}
                   </Menu.Item>
                 </div>
-
-                {/* Bio Link */}
-                {/* <div className="px-1 py-1 pb-2">
-                <Menu.Item>
-                  {({ active }) => (
-                    <Link
-                      // target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://bio.link/johncanero"
-                    >
-                      <button
-                        className={`${
-                          active ? "bg-violet-500 text-white" : "text-gray-900"
-                        } group flex w-72 items-center rounded-md px-2 py-1 text-sm font-Poppins`}
-                      >
-                        <span className="ml-2">@johncanero</span>
-                      </button>
-                    </Link>
-                  )}
-                </Menu.Item>
-              </div> */}
               </Menu.Items>
             </Transition>
           </Menu>
