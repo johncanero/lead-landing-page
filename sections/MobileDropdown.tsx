@@ -155,10 +155,10 @@ const MenuDropdown = () => {
                           className={`${active
                             ? "bg-violet-500 text-white"
                             : "text-gray-900"
-                            } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
+                            } group flex items-center rounded-md px-2 py-2 text-sm font-Poppins`}
                         >
                           <AiOutlineOrderedList size={17} />
-                          <span className="ml-2">Digital Marketing Services</span>
+                          <span className="ml-2">Digital Services</span>
                         </button>
                       </Link>
                     )}
@@ -174,7 +174,7 @@ const MenuDropdown = () => {
                           className={`${active
                             ? "bg-violet-500 text-white"
                             : "text-gray-900"
-                            } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
+                            } group flex items-center rounded-md px-2 py-2 text-sm font-Poppins`}
                         >
                           <AiOutlineQuestionCircle size={17} />
                           <span className="ml-2">Why Lead</span>
@@ -190,7 +190,7 @@ const MenuDropdown = () => {
                           className={`${active
                             ? "bg-violet-500 text-white"
                             : "text-gray-900"
-                            } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
+                            } group flex items-center rounded-md px-2 py-2 text-sm font-Poppins`}
                         >
                           <RiFileHistoryLine size={17} />
                           <span className="ml-2">Get A Quote</span>
@@ -213,7 +213,7 @@ const MenuDropdown = () => {
                           className={`${active
                             ? "bg-violet-500 text-white"
                             : "text-gray-900"
-                            } group flex w-72 items-center rounded-md px-2 py-1 text-sm font-Poppins`}
+                            } group flex items-center rounded-md px-2 py-1 text-sm font-Poppins`}
                         >
                           <AiOutlineMail size={17} />
                           <span className="ml-2">Contact</span>
@@ -235,7 +235,7 @@ const MenuDropdown = () => {
                             e.preventDefault();
                             signIn('google');
                           }}
-                          className='flex items-center px-2 py-2 text-sm text-gray-900 rounded-md group w-72 font-Poppins'
+                          className='flex items-center px-2 py-2 text-sm text-gray-900 rounded-md group font-Poppins'
                         >
                           <LoginMobile />
                         </button>
@@ -251,7 +251,7 @@ const MenuDropdown = () => {
                         className={`${active
                           ? "bg-blue-500 text-white"
                           : "text-gray-900"
-                          } group flex w-72 items-center rounded-md px-2 py-2 text-sm font-Poppins`}
+                          } group flex items-center rounded-md px-2 py-2 text-sm font-Poppins`}
                         onClick={(() => signOut())}
                       >
                         <ArrowLeftOnRectangleIcon className="w-6" />
@@ -264,7 +264,7 @@ const MenuDropdown = () => {
                     {({ active }) => (
                       <button
                         className={`${active ? "bg-violet-500 text-white" : "text-gray-900"
-                          } group flex w-72 items-center rounded-md  py-1 text-sm font-Poppins`}
+                          } group flex items-center rounded-md py-1 text-sm font-Poppins`}
                       >
                         {renderThemeChanger()}
                       </button>
