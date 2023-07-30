@@ -30,18 +30,21 @@ Request Beta Access to TRY!
 ## Responsive Design
 
 🪟: [Desktop - Tablet - Mobile]
+![Lead Digital Portfolio](./public/images/responsive/leadDigitalPortfolio.jpg)
+![Lead Digital - Branding Portfolio](./public/images/responsive/leadDigital.jpg)
+![Lead Digital - Description Portfolio](./public/images/responsive/leadDigitalInfo.jpg)
 
-Responsive Feature Application
-![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalDesktopLight.png)
-![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalDesktopDark.png)
-![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadLandingPageApplicationFeature.png)
-Desktop Responsive Light
-![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalDesktopLight.jpg)
-Desktop Responsive Light: How To Buy
-![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalDesktopLightHowToBuy.jpg)
-Desktop Responsive Dark
-![Desktop View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalDesktopDark.jpg)
-Tablet Responsive | Light and Dark
-![Tablet View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalTablet.jpg)
-Mobile Responsive | Light and Dark
-![Mobile View - Lead Landing Page - Digital Marketing Website](./public/images/responsive/LeadDigitalMobile.jpg)
+![Lead Digital - Mockup Portfolio](./public/images/responsive/leadDigitalMockupLightMode.jpg)
+![Lead Digital - Mockup Portfolio](./public/images/responsive/leadDigitalMockupLightMode-1.jpg)
+
+![Lead Digital - Mobile Portfolio](./public/images/responsive/leadDigitalMobileLightMode.jpg)
+![Lead Digital - Mobile Portfolio](./public/images/responsive/leadDigitalMobileLightMode-1.jpg)
+![Lead Digital - Mobile Portfolio](./public/images/responsive/leadDigitalMobileLightAndDarkMode.jpg)
+
+![Lead Digital - Tablet Portfolio](./public/images/responsive/leadDigitalTabletLightMode.jpg)
+![Lead Digital - Tablet Portfolio](./public/images/responsive/leadDigitalTabletDarkMode.jpg)
+![Lead Digital - Tablet Portfolio](./public/images/responsive/leadDigitalTabletDarkAndLightMode.jpg)
+
+![Lead Digital - Desktop Portfolio](./public/images/responsive/leadDigitalDesktopLightMode.jpg)
+![Lead Digital - Desktop Portfolio](./public/images/responsive/leadDigitalDesktopDarkMode.jpg)
+![Lead Digital - Desktop Portfolio](./public/images/responsive/leadDigitalDesktopLightAndDarkMode.jpg)
