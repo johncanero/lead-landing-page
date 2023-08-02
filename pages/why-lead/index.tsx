@@ -79,9 +79,9 @@ const index = () => {
           </p>
 
           {/* Chat GPT */}
-          <p className="mt-4 text-xs font-ShareTechMono md:text-sm dark:text-neutral-600">
+          {/* <p className="mt-4 text-xs font-ShareTechMono md:text-sm dark:text-neutral-600">
             From ChatGPT: Optimizing Language Model for Dialogue
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

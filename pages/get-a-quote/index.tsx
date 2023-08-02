@@ -38,9 +38,9 @@ const index = () => {
               With Lead, you can streamline your marketing and sales processes, automate your workflows, and achieve your business goals faster and more efficiently than ever. So why wait? Sign up today and start using Lead to take your business to the next level!</p>
 
             {/* Chat GPT */}
-            <p className="mt-4 text-xs font-ShareTechMono md:text-sm dark:text-neutral-600">
+            {/* <p className="mt-4 text-xs font-ShareTechMono md:text-sm dark:text-neutral-600">
               From ChatGPT: Optimizing Language Model for Dialogue
-            </p>
+            </p> */}
           </div>
 
 
